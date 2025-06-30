@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleankart</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <!-- Correct Font Awesome CDN -->
+<!-- Latest Free Font Awesome CDN (No Account Required) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Cleankart</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#services">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="home.html">CleanKart Shine</a></li>
+            <li><a href="office-cleaning.html">CleanKart PGCare</a></li>
+            <li><a href="Interior Design.html">CleanKart Interiors</a></li>
+            <li><a href="Home Painting.html">CleanKart Colors</a></li>
+            <li><a href="grocery.html">Cleankart Technician </a></li>
+            <li><a href="food.html">Food Services</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- Inside your navbar <ul class="nav-links"> -->
+       <li><button id="openLogin" class="nav-btn">Login</button></li>
+       <li><button id="openRegister" class="nav-btn nav-btn-outline">Register</button></li>
+
+
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/Manmathkokale" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/m.a.n.m.a.t.h_k.o.k.a.l.e" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/918208097768" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+  <div class="hero-text">
+    <h1>All Your Home Needs.<span>One Kart</span></h1>
+    <p>Clean Homes. Fresh Foods. Quick Delivery.”</p>
+    <a href="#contact" class="btn">Get a Quote</a>
+  </div>
+</section>
+
+
+  <section id="about" class="about section">
+    <h2>About Us</h2>
+    <p>We are a team of trained professionals offering top-class cleaning services with 100% satisfaction. Whether it’s home, office or sofa cleaning – we handle it all with care and precision.</p>
+  </section>
+
+  <section id="services" class="services section">
+  <h2>Our Services</h2>
+  <div class="service-container">
+
+    <a href="home.html" class="service-link">
+      <div class="service-card">
+        <img src="images/home.jpg" alt="Home Cleaning">
+        <i class="fas fa-home"></i>
+        <h3>Home Cleaning</h3>
+        <p>Deep cleaning services for your home, kitchen, and bathrooms.</p>
+      </div>
+    </a>
+
+    <a href="office.html" class="service-link">
+      <div class="service-card">
+        <img src="images/office.jpg" alt="Office Cleaning">
+        <i class="fas fa-building"></i>
+        <h3>Office Cleaning</h3>
+        <p>Keep your workspace fresh and sanitized with our services.</p>
+      </div>
+    </a>
+
+    <a href="carpet.html" class="service-link">
+      <div class="service-card">
+        <img src="images/carpet.jpg" alt="Carpet & Sofa">
+        <i class="fas fa-couch"></i>
+        <h3>Carpet & Sofa</h3>
+        <p>Expert cleaning for all types of upholstery and flooring.</p>
+      </div>
+    </a>
+
+    <a href="window.html" class="service-link">
+      <div class="service-card">
+        <img src="images/windowclean.jpg" alt="Window Cleaning">
+        <i class="fas fa-window-maximize"></i>
+        <h3>Window Cleaning</h3>
+        <p>Spotless and streak-free cleaning for residential and commercial windows.</p>
+      </div>
+    </a>
+
+    <a href="bathroom.html" class="service-link">
+      <div class="service-card">
+        <img src="images/bathroom santization.jpg" alt="Bathroom Sanitization">
+        <i class="fas fa-toilet"></i>
+        <h3>Bathroom Sanitization</h3>
+        <p>Deep disinfection and germ protection for toilets and washrooms.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+  <section id="contact" class="contact section">
+  <h2>Contact Us</h2>
+  <form id="contact-form" class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 SafSafaiwala. All rights reserved. | Designed by You 🚀</p>
+  </footer>
+
+  <!-- Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close" id="closeLogin">&times;</span>
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal" id="registerModal">
+  <div class="modal-content">
+    <span class="close" id="closeRegister">&times;</span>
+    <h2>Register</h2>
+    <form action="register.php" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm" placeholder="Confirm Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
